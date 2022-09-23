@@ -39,9 +39,9 @@
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a> -->
     <!-- · -->
-    <a href="https://github.com/cnu-bot/issuess">Report Bug</a>
+    <a href="https://github.com/cnu-bot/cnubot-admin/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/cnu-bot/issues">Request Feature</a>
+    <a href="https://github.com/cnu-bot/cnubot-admin/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
   </p>
 </div>
 
