@@ -56,7 +56,6 @@ Frontend
 
 etc
 
-<code><img width="60" height="60" src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"></code>
 <code><img width="60" height="60" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"></code>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
