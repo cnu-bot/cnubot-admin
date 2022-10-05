@@ -73,10 +73,14 @@ etc
    /SomeComponent or page folder
    ├── index.js
    ├── SomeComponent.tsx
+   ├── SomeComponent.constant.tsx
+   ├── SomeComponent.type.tsx
    └── SomComponent.style.ts
    /SomeComponent2 or page folder
    ├── index.js
    ├── SomeComponent2.tsx
+   ├── SomeComponent2.constant.tsx
+   ├── SomeComponent2.type.tsx
    └── SomComponent2.style.ts
    ```
 2. prettier
