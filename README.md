@@ -117,14 +117,10 @@ etc
 ### Commit Convention
 
 feat: 새로운 기능에 대한 커밋  
-content: 내용
-design: UI 수정 및 구현에 대한 커밋
+hotfix: main 및 develop 브랜치에 대한 급한 이슈 해결
 fix: 버그 수정에 대한 커밋  
-build: 빌드 관련 파일 수정에 대한 커밋  
-etc: 그 외 자잘한 수정에 대한 커밋  
-docs: README.md 수정에 대한 커밋  
-style: 코드 스타일 혹은 포맷 등에 관한 커밋(prettier 등)  
-refactor: 코드 리팩토링에 대한 커밋
+chore: 그 외 자잘한 수정에 대한 커밋  
+refactor: 코드 리팩토링에 대한 커밋 (코드 퀄리티 개선)
 
 ### Prerequisites
 
