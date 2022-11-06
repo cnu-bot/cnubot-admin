@@ -1,45 +1,37 @@
 import { logo } from "@images/common";
-// import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useInput } from "~/hooks";
 import * as Styled from "./SignIn.style";
 
 const SignIn = () => {
-  const [adminId, setAdminId] = useState("");
-  const [adminPw, setAdminPw] = useState("");
+  const { inputProps: idInput, resetValue: resetIdInput } = useInput({
+    type: "text",
+    defValue: ""
+  });
+  const { inputProps: pwInput, resetValue: resetPwInput } = useInput({
+    type: "password",
+    defValue: ""
+  });
+  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert(`${idInput.value}, ${pwInput.value} 입니다.`);
+    resetIdInput();
+    resetPwInput();
+  };
 
   return (
     <Styled.Container as="main" direction="column">
       <img src={logo} alt="logo" />
-      <Styled.SignInBody>
+      <Styled.SignInForm onSubmit={submitHandler}>
         <Styled.InputBox>
           <Styled.SignInLabel> 아이디 </Styled.SignInLabel>
-          <Styled.SignInInput
-            type="text"
-            placeholder="아이디"
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-              setAdminId(e.target.value);
-            }}
-          />
+          <Styled.SignInInput placeholder="아이디" {...idInput} required />
         </Styled.InputBox>
         <Styled.InputBox>
           <Styled.SignInLabel> 비밀번호 </Styled.SignInLabel>
-          <Styled.SignInInput
-            type="text"
-            placeholder="비밀번호"
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-              setAdminPw(e.target.value);
-            }}
-          />
+          <Styled.SignInInput placeholder="비밀번호" {...pwInput} required />
         </Styled.InputBox>
-        <Styled.LoginButton
-          onClick={() => {
-            // 구현 필요 서버에 보내서 아이디 체크
-            alert(adminId + adminPw);
-          }}
-        >
-          로그인
-        </Styled.LoginButton>
-      </Styled.SignInBody>
+        <Styled.LoginButton type="submit">로그인</Styled.LoginButton>
+      </Styled.SignInForm>
     </Styled.Container>
   );
 };
