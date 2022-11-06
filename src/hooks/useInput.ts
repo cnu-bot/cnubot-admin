@@ -1,11 +1,11 @@
 import { useCallback, useState } from "react";
 
-interface IuseInputProps {
+interface IProps {
   type: string;
   defValue: string | number;
 }
 
-const useInput = ({ type, defValue }: IuseInputProps) => {
+const useInput = ({ type, defValue }: IProps) => {
   const [value, setValue] = useState(defValue);
   return {
     inputProps: {

@@ -21,9 +21,9 @@ export const SignInForm = styled.form`
 `;
 
 export const InputBox = styled.div`
-  margin-top: 0.75em;
+  margin-top: ${pxToRem(12)};
 `;
-// font-size: ${pxToRem(30}; global.style.ts 수정후에도 적용이 되지 않습니다.
+
 export const SignInLabel = styled(Text)`
   grid-row: 1;
   font-size: ${pxToRem(30)};
@@ -35,7 +35,7 @@ export const SignInInput = styled.input`
   border: 1px solid ${Colors.grayAF};
   border-radius: ${pxToRem(4)};
   padding: 0 ${pxToRem(65)} 0 ${pxToRem(5)};
-  margin-top: 0.2rem;
+  margin-top: ${pxToRem(3.2)};
   width: 100%;
   height: ${pxToRem(35)};
   outline: none;
@@ -46,14 +46,11 @@ export const SignInInput = styled.input`
 `;
 
 export const LoginButton = styled.button`
-  top: 0;
-  right: 0;
-  border: none;
   border-radius: ${pxToRem(5)};
   width: 100%;
   height: ${pxToRem(35)};
-  margin-top: 0.75rem;
+  margin-top: ${pxToRem(12)};
   background-color: ${Colors.SouthernBlue};
-  color: #fff;
+  color: ${Colors.white};
   font-size: ${pxToRem(32)};
 `;
