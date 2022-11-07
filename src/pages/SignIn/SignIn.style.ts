@@ -37,7 +37,6 @@ export const SignInInput = styled.input`
   margin-top: ${pxToRem(3.2)};
   width: 100%;
   height: ${pxToRem(35)};
-  outline: none;
   ::placeholder {
     color: ${Colors.grayC3};
     size: ${pxToRem(28)};
