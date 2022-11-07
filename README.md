@@ -117,6 +117,7 @@ etc
 - 전역적으로 재사용될 타입: `src/@types/index.d.ts`에서 `declare`하여 정리(import, export 필요 없음)
 - 단 하나의 컴포넌트에만 쓰이는 타입은 해당 파일 내부에 선언해도 무관
 - 타입 선언 방식: interface(대부분의 타입) + type alias(원시 타입)
+- 타입은 별다른 prefix가 없고 props를 선언한다면 Props 그 자체로 의미가 통용된다면 `Props`로 명명합니다.
 
 ### Commit Convention
 
