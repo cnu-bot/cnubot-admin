@@ -61,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: ${vw(ROOT_FONT_SIZE * 2)};
+    font-size: ${vw(ROOT_FONT_SIZE)};
     will-change: font-size;
     height: 100%;
 
