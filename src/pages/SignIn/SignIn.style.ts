@@ -3,8 +3,8 @@ import { FlexCenter } from "~/constants/Common.style";
 import { media } from "~/constants/Media";
 import { Text } from "~/constants/Typography";
 import Colors from "~/constants/Colors";
-import { EXTRA_BOLD_WEIGHT } from "~/constants/Variables";
 import { pxToRem } from "~/constants/Size";
+import { EXTRA_BOLD_WEIGHT } from "~/constants/Variables";
 
 export const Container = styled(FlexCenter)`
   height: 100vh;
@@ -24,12 +24,11 @@ export const InputBox = styled.div`
   margin-top: ${pxToRem(12)};
 `;
 
-export const SignInLabel = styled(Text)`
-  grid-row: 1;
-  font-size: ${pxToRem(30)};
-  font-weight: ${EXTRA_BOLD_WEIGHT};
-  color: ${Colors.gray83};
-`;
+export const SignInLabel = styled(Text).attrs({
+  size: pxToRem(30),
+  weight: EXTRA_BOLD_WEIGHT,
+  color: Colors.gray83
+})``;
 
 export const SignInInput = styled.input`
   border: 1px solid ${Colors.grayAF};
