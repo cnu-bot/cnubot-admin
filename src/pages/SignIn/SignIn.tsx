@@ -13,7 +13,7 @@ const SignIn = () => {
   });
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert(`${idInput.value}, ${pwInput.value} 입니다.`);
+    // alert(`${idInput.value}, ${pwInput.value} 입니다.`);
     resetIdInput();
     resetPwInput();
   };
