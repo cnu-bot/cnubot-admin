@@ -1,16 +1,17 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import styled from "styled-components";
-import { Header, SideBar } from "@components/common";
+import { SideBar } from "~/components/common";
 
 const Inner = styled.div`
-  margin-left: 300px;
+  margin-left: 150px;
 `;
 
 const Main = () => {
   return (
     <>
+      {/* <ResponsiveAppBar /> */}
+      {/* <Header /> */}
       <SideBar />
-      <Header />
       <Inner>
         {/* this is for nested routing */}
         <Outlet />
